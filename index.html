@@ -1,19 +1,50 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
 <style>
   body {
     margin: 0;
     height: 100vh;
     display: flex;
-    justify-content: center; /* horizontal */
-    align-items: center;     /* vertical */
+    justify-content: center; 
+    align-items: center;     
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .wrapper {
+    text-align: center;
+  }
+
+  .wrapper p.big {
+    font-size: 2rem;     /* large text */
+    font-weight: 600;
+    margin-top: 15px;
+  }
+
+  .wrapper p.small {
+    font-size: 1rem;     /* smaller text */
+    font-weight: 300;
+    margin-top: 5px;
+    color: #555;         /* optional softer color */
+  }
+
+  img {
+    max-width: 300px;
   }
 </style>
 </head>
+
 <body>
 
-<img src="assets/logo.JPG">
+<div class="wrapper">
+    <img src="assets/logo.JPG" alt="Logo">
+    <p class="big">Fox in the box</p>
+    <p class="small">...coming soon</p>
+</div>
 
 </body>
 </html>
